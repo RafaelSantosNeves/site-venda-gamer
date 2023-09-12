@@ -18,6 +18,6 @@ app.use(express.json({ type: 'application/vnd.api+jason' }));
 app.use(cors());
 
 app.use(index);
-app.use('/api/', employeeRoute);
+app.use('/api/', siteVendasRoute);
 
 module.exports = app; 
