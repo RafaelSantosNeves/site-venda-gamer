@@ -13,12 +13,12 @@
     width: 45px;
     font-size: 45px;
     height: 45px;
+    transition: width 1s ease, height 1s ease, font-size 1s ease;
 }
   
   .header{
     background-color: #333333;
     display: flex;
-    border-radius: 5px;
   }
 
   .title{
@@ -100,6 +100,46 @@
     background-color: #05aa20;
     border-radius: 5px;
     font-family: sans-serif;
+    transition: background-color 1s, color 1s;
+    transition: width 1s;
+    width: 200px;
+    transition-timing-function: ease;
+}
+
+.carrinho:hover{
+  background-color: #048f1b;
+  width: 290px;
+}
+
+.containerHelp{
+  transition: width 0.5s;
+  transition-timing-function: ease;
+
+}
+
+.containerHelp:hover > mat-icon{
+  font-size: 40px;
+  width: 40px;
+  height: 40px;
+  color: #c7020f;
+}
+
+.containerHelpText{
+  font-size: 16px;
+  transition: font-size 0.5s ease;
+}
+
+.containerHelp:hover .containerHelpText{
+  font-size: 14px;
+}
+
+.containerHelpTitle{
+  font-size: 20px;
+  transition: font-size 0.5s ease;
+}
+
+.containerHelp:hover .containerHelpTitle{
+  font-size: 18px;
 }
 
 .carrinhoTitulo{
@@ -142,6 +182,13 @@
     background-color: #E90313;
     border-radius: 5px;
     font-family: sans-serif;
+    width: 305px;
+    transition: width 1s ease;
+}
+
+.menuIcon:hover{
+  background-color: #c7020f;
+  width: 285px;
 }
 
 p{
