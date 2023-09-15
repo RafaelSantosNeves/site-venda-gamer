@@ -6,12 +6,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './home/header/header.component';
 import { BannerComponent } from './home/banner/banner.component';
 import { MatIconModule } from '@angular/material/icon';
+import { ProdutosComponent } from './home/produtos/produtos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    BannerComponent
+    BannerComponent,
+    ProdutosComponent,
+    
   ],
   imports: [
     BrowserModule,

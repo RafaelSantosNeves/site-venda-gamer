@@ -1,0 +1,50 @@
+@import "~bootstrap/dist/css/bootstrap.css"; 
+
+
+main{
+    background-color: #333333;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+.verde{
+    color: #02cf25;
+}
+
+.vermelho{
+    color: #E90313;
+}
+
+.prazo{
+    border-top: #e903127a solid 2px;
+}
+
+.setaEsquerda{
+    background-color: #33333300;
+    border: none;
+    margin-left: -10px;
+}
+
+.setaDireita{
+    background-color: #33333300;
+    border: none;
+    margin-right: -10px;
+}
+
+.setas{
+    margin-top: 250px;
+    z-index: 1;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+    border-bottom: solid floralwhite 3px;
+    transform: font-size 1s;
+    font-size: 32px;
+}
+
+a:hover{
+    font-size: 25px;
+}
