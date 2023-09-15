@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class ProdutosComponent {
 
+
+  categoria: String[] = ["COMPUTADORES", "PEÇAS", "VIDEO GAMES", "PERIFERICOS", "LIVROS"]
 }
