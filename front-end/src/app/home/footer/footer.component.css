@@ -1,0 +1,30 @@
+.container{
+    background-color: #4d4d4d;
+    color: rgb(255, 255, 255);
+
+}
+
+main{
+    background-color: #4d4d4d;
+}
+
+.link-dark{
+    color: aliceblue;
+}
+
+SVG{
+    color: aliceblue;
+}
+
+.logoFuter{
+    margin-top: 20px;
+}
+
+h5{
+    color: #E90313;
+}
+
+a{
+    color: #ffffff;
+    text-decoration: none;
+}

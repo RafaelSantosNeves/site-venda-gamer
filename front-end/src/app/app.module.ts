@@ -7,6 +7,7 @@ import { HeaderComponent } from './home/header/header.component';
 import { BannerComponent } from './home/banner/banner.component';
 import { MatIconModule } from '@angular/material/icon';
 import { ProdutosComponent } from './home/produtos/produtos.component';
+import { FooterComponent } from './home/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { ProdutosComponent } from './home/produtos/produtos.component';
     HeaderComponent,
     BannerComponent,
     ProdutosComponent,
+    FooterComponent,
     
   ],
   imports: [
