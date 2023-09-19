@@ -8,6 +8,8 @@ import { BannerComponent } from './home/banner/banner.component';
 import { MatIconModule } from '@angular/material/icon';
 import { ProdutosComponent } from './home/produtos/produtos.component';
 import { FooterComponent } from './home/footer/footer.component';
+import { SidebarsComponent } from './home/sidebars/sidebars.component';
+import { MenuToggleDirective } from './menu-toggle.directive';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,8 @@ import { FooterComponent } from './home/footer/footer.component';
     BannerComponent,
     ProdutosComponent,
     FooterComponent,
+    SidebarsComponent,
+    MenuToggleDirective,
     
   ],
   imports: [

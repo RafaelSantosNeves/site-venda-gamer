@@ -1,5 +1,6 @@
-<!-- INÍCIO BLOCO: HADER -->
+<app-sidebars [ngClass]="{'minha-classe': isMenuOpen}" #menu id="menu" class="sideBar" ></app-sidebars>
 
+<!-- INÍCIO BLOCO: HADER -->
 <div class="header d-flex justify-content-between">
 
     <!-- INÍCIO BLOCO: LEFT -->
@@ -12,11 +13,11 @@
         <!-- FIM BLOCO: LOGO -->
 
         <!-- INÍCIO BLOCO: MENU -->
-        <div class="d-flex flex-row justify-content-center menuIcon mb-2">
-            <mat-icon class="iconMenu">menu</mat-icon>
-            <div class="iconHelpText d-flex flex-column mt-2 me-4">
-                <p class="">Menu</p>
-                <h5 class="margin-">Configuração / Ajuda</h5>
+        <div #toggleButton (click)="toggleClass()" id="button" class=" buttonMenu d-flex flex-row justify-content-center menuIcon mb-2 menu">
+            <mat-icon class="buttonMenu iconMenu">menu</mat-icon>
+            <div class="buttonMenu iconHelpText d-flex flex-column mt-2 me-4">
+                <p class="buttonMenu">Menu</p>
+                <h5 class="buttonMenu margin-">Configuração / Ajuda</h5>
             </div>
         </div>
         <!-- FIM BLOCO: MENU -->
@@ -88,3 +89,4 @@
     <!-- FIM BLOCO: RIGTH -->
 
 </div>
+

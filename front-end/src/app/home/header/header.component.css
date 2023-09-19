@@ -182,7 +182,8 @@
     border-radius: 5px;
     font-family: sans-serif;
     width: 305px;
-    transition: width 1s ease;
+    transition: width 0.5s ease-out;
+    z-index: 1; /* Adicione este z-index */
 }
 
 .menuIcon:hover{
@@ -192,4 +193,22 @@
 
 p{
     font-family: sans-serif;
+}
+
+.sideBar{
+  z-index: 2;
+  left: -100%;
+  transition: left 0.8s cubic-bezier(.24, .4, .45, 1);
+  position: fixed;
+}
+
+.minha-classe{
+  left: 0px;
+}
+
+.waaa{
+  min-width: 100px;
+  min-height: 100px;
+  background-color: #048f1b;
+  position: absolute;
 }
