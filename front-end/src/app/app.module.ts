@@ -10,6 +10,7 @@ import { ProdutosComponent } from './home/produtos/produtos.component';
 import { FooterComponent } from './home/footer/footer.component';
 import { SidebarsComponent } from './home/sidebars/sidebars.component';
 import { MenuToggleDirective } from './menu-toggle.directive';
+import { HomeCompletoComponent } from './home/home-completo/home-completo.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { MenuToggleDirective } from './menu-toggle.directive';
     FooterComponent,
     SidebarsComponent,
     MenuToggleDirective,
+    HomeCompletoComponent,
     
   ],
   imports: [
