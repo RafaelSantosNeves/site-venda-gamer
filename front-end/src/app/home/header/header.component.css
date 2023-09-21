@@ -166,7 +166,7 @@
 }
 
 .margin-{
-    margin-top: -20px;
+    margin-top: -12px;
     font-family: sans-serif;
 }
 
@@ -206,9 +206,7 @@ p{
   left: 0px;
 }
 
-.waaa{
-  min-width: 100px;
-  min-height: 100px;
-  background-color: #048f1b;
-  position: absolute;
+.aPadrao{
+  color: inherit; /* ou outra cor desejada */
+  text-decoration: none;
 }

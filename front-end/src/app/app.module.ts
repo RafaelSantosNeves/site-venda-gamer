@@ -11,6 +11,8 @@ import { FooterComponent } from './home/footer/footer.component';
 import { SidebarsComponent } from './home/sidebars/sidebars.component';
 import { MenuToggleDirective } from './menu-toggle.directive';
 import { HomeCompletoComponent } from './home/home-completo/home-completo.component';
+import { CadastroComponent } from './login/cadastro/cadastro.component';
+import { LoginComponent } from './login/login/login.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { HomeCompletoComponent } from './home/home-completo/home-completo.compon
     SidebarsComponent,
     MenuToggleDirective,
     HomeCompletoComponent,
+    CadastroComponent,
+    LoginComponent,
     
   ],
   imports: [

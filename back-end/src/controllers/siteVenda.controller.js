@@ -5,4 +5,7 @@
 
 const db = require('../config/database.js');
 
-exports
+exports.test = async(req, res) => {
+    console.log(req.body);
+    res.redirect('http://localhost:4200/home')
+}

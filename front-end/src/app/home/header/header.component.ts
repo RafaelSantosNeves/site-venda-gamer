@@ -9,18 +9,9 @@ export class HeaderComponent {
   /**
    * This is the toogle button elemenbt, look at HTML and see its defination
    */
-  children!: [];
-  @ViewChild('toggleButton') toggleButton!: ElementRef;
-  @ViewChild('menu') menu!: ElementRef;
-
-
-  ngAfterViewInit() {
-
-  }
-  
   constructor(private renderer: Renderer2, private el: ElementRef) {
     this.renderer.listen('window', 'click', (e: Event) => {
-      /* pega o html puro da onde foi clicado */
+      /* pega o html puro da onde foi clicado do e.target e cria a resposta esperada pro if*/
       const divElement = e.target as HTMLDivElement;
       const menuElement =  'menu';
       const button = e.target as HTMLDivElement
@@ -35,14 +26,12 @@ export class HeaderComponent {
        */
       if (
         button.classList[0] !== buttonMenu &&
-        e.target !== this.menu.nativeElement &&
         divElement.id !== menuElement
       ) {
         this.isMenuOpen = false;
       }
     });
   }
-  
 
   isMenuOpen = false;
 

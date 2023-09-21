@@ -16,8 +16,8 @@
         <div #toggleButton (click)="toggleClass()" id="button" class=" buttonMenu d-flex flex-row justify-content-center menuIcon mb-2 menu">
             <mat-icon class="buttonMenu iconMenu">menu</mat-icon>
             <div class="buttonMenu iconHelpText d-flex flex-column mt-2 me-4">
-                <p class="buttonMenu">Menu</p>
-                <h5 class="buttonMenu margin-">Configuração / Ajuda</h5>
+                <h5 class="buttonMenu">Menu</h5>
+                <h6 class="buttonMenu margin-">Configuração / Navegação</h6>
             </div>
         </div>
         <!-- FIM BLOCO: MENU -->
@@ -32,17 +32,20 @@
         <div class="d-flex justify-content-end d-flex align-items-center">
 
             <!-- INÍCIO BLOCO: HELPS -->
-            <div class="d-flex flex-row containerHelp">
+            <a class="aPadrao" href="cadastro">
+                            <div class="d-flex flex-row containerHelp">
                 <mat-icon class="me-1 iconHelp"> person_pin</mat-icon>
                 <div class="iconHelpText d-flex flex-column mt-1 me-4">
-                    <p class="containerHelpText">Conta</p>
+                    <h4 class=" containerHelpText">Conta</h4>
                     <h5 class="margin- containerHelpTitle">Cadastro / Loging</h5>
                 </div>
             </div>
+            </a>
+
             <div class="d-flex flex-row containerHelp">
                 <mat-icon class="me-1 iconHelp">supervised_user_circle</mat-icon>
                 <div class="iconHelpText d-flex flex-column mt-1 me-4">
-                    <p class="containerHelpText">Atendimento</p>
+                    <h6 class="containerHelpText">Atendimento</h6>
                     <h5 class="margin- containerHelpTitle">Ao Cliente</h5>
                 </div>
             </div>

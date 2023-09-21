@@ -1,2 +1,17 @@
 <app-banner></app-banner>
 <app-produtos></app-produtos>
+<ng-container *ngIf="userProfile">
+    <div>Welcome, {{ userProfile.name}}</div>
+    <div>
+        <div class="user-card">
+            <div class="profile-photo">
+                <img [src]="userProfile.picture" alt="">
+            </div>
+            <div class="user-info">
+                <h2>{{ userProfile.given_name}} {{userProfile.family_name}}</h2>
+                <p>{{userProfile.email}}</p>
+            </div>
+        </div>
+    </div>
+</ng-container>
+<button id="signout-button" (click)="handleSignOut()">Sign Out</button>

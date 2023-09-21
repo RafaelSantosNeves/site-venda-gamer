@@ -3,7 +3,7 @@
  * descrição: arquivo responsável por toda a configuração e execução do Back-End 
  */
 
-const app = require('.src/app.js')
+const app = require('./src/app.js')
 
 const port = process.env.PORT || 3000;
 

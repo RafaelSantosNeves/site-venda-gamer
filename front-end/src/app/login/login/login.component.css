@@ -1,0 +1,24 @@
+.fundoForm{
+    background-color: #333333;
+    color: #fff;
+}
+
+.a{
+    color: #6fb9ff;
+}
+
+.fundo{
+    background-image: url(https://pbs.twimg.com/media/D3te3k9V4AAzOun.jpg:large);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.login{
+    text-decoration: none;
+    color: #fff;
+}
+
+img{
+    width: 25px;
+    height: 25px;
+}
