@@ -6,8 +6,7 @@
 const db = require('../config/database.js');
 
 
-exports.test = async(req, res) => {
-    console.log(req.body.credential);
+exports.cadatroUsuario = async(req, res) => {
     credential = req.body.credential
 
     function decodeJWTToken(token) {
@@ -17,13 +16,20 @@ exports.test = async(req, res) => {
 
     //para decodificar credenciais do response
     const responsePayload = decodeJWTToken(credential)
-    sessionStorage = [JSON.stringify(responsePayload)]
-    console.log(sessionStorage.name)
+    sessionStorage = JSON.stringify(responsePayload)
 
     this.userProfile = JSON.parse(sessionStorage || "")
-    console.log(this.userProfile.email, this.userProfile.given_name, this.userProfile.family_name, this.userProfile.email,)
+    
+    const { name, email, sub: senha } = this.userProfile
 
-    res.redirect('http://localhost:4200/home')
+    const { rows } = await db.query(
+        "INSERT INTO usuario (email, senha, nome) VALUES($1, $2, $3);",
+        [email, senha, name]
+    )
+
+    console.log('Usuário cadastrado com sucesso')
+
+    res.status(201).redirect('http://localhost:4200/home')
 
 
   
