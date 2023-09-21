@@ -1,27 +1,24 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-declare var handleSignout: any;
+import { SiteVendasGamerService } from 'src/app/site-vendas-gamer.service';
+
 @Component({
   selector: 'app-home-completo',
   templateUrl: './home-completo.component.html',
   styleUrls: ['./home-completo.component.css']
 })
 export class HomeCompletoComponent implements OnInit {
-
 userProfile: any
 
-constructor(private router: Router){}
 
-ngOnInit(): void {
-this.userProfile = JSON.parse(sessionStorage.getItem("loggedInUser") || "")
+constructor(private conectaService: SiteVendasGamerService){
+
 }
 
-handleSignOut(){
-  handleSignout();
-  sessionStorage.removeItem("loggedInUser")
-  this.router.navigate(["/login"]).then(() => {
-    window.location.reload()
-  })
+
+ngOnInit(): void {
+ this.userProfile = this.conectaService.loginWithGoogle()
+ console.log(this.userProfile.email, this.userProfile.given_name, this.userProfile.family_name, this.userProfile.email,)
+
 }
 
 }
